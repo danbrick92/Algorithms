@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87a5f926-32a3-42ef-8f90-ebff11dfc063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/random_contraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bfs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/graphs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +37,28 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.random_contraction">
+  <component name="RunManager" selected="Python.bfs">
+    <configuration name="bfs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bfs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -50,27 +72,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binary_search.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="closest_pairs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/incomplete/closest_pairs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bfs" />
         <item itemvalue="Python.random_contraction" />
         <item itemvalue="Python.randomized_selection" />
         <item itemvalue="Python.quick_sort" />
         <item itemvalue="Python.binary_search" />
-        <item itemvalue="Python.closest_pairs" />
       </list>
     </recent_temporary>
   </component>
@@ -182,46 +183,54 @@
       <option name="project" value="LOCAL" />
       <updated>1586977811979</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding random graph contraction">
+      <created>1587586562144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587586562144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding quicksort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding quicksort" />
+    <MESSAGE value="Adding random graph contraction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding random graph contraction" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="353" y="52" key="CommitChangelistDialog2" timestamp="1586977811875">
+    <state x="353" y="52" key="CommitChangelistDialog2" timestamp="1587586562030">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="353" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586977811875" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1587586510798">
+    <state x="353" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587586562030" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1587755698165">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587586510798" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1587586510797">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587755698165" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1587755698164">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587586510797" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1587586510797">
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587755698164" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1587755698164">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587586510797" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1587586510798">
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587755698164" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1587755698165">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587586510798" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586977833151">
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587755698165" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1587586564656">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586977833151" />
-    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1587578243620">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1587586564656" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1587750040589">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587578243620" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1587750040589" />
     <state x="399" y="281" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1587562852184" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587581628902">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587754263389">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1587581628902" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1587754263389" />
   </component>
 </project>
