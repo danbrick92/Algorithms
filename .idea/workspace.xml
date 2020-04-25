@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87a5f926-32a3-42ef-8f90-ebff11dfc063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/graphs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/bfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/graphs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +31,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/incomplete" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bfs">
+  <component name="RunManager" selected="Python.dfs">
     <configuration name="bfs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,7 +64,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dfs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,7 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binary_search.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dfs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dfs" />
         <item itemvalue="Python.bfs" />
         <item itemvalue="Python.random_contraction" />
         <item itemvalue="Python.randomized_selection" />
         <item itemvalue="Python.quick_sort" />
-        <item itemvalue="Python.binary_search" />
       </list>
     </recent_temporary>
   </component>
@@ -190,39 +195,47 @@
       <option name="project" value="LOCAL" />
       <updated>1587586562144</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="BFS, graphs api">
+      <created>1587755730714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587755730714</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding quicksort" />
     <MESSAGE value="Adding random graph contraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding random graph contraction" />
+    <MESSAGE value="BFS, graphs api" />
+    <option name="LAST_COMMIT_MESSAGE" value="BFS, graphs api" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="353" y="52" key="CommitChangelistDialog2" timestamp="1587586562030">
+    <state x="353" y="52" key="CommitChangelistDialog2" timestamp="1587755730603">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="353" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587586562030" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1587755698165">
+    <state x="353" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587755730603" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1587773791528">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587755698165" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1587755698164">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587773791528" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1587773791527">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587755698164" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1587755698164">
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587773791527" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1587773791526">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587755698164" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1587755698165">
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587773791526" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1587773791527">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587755698165" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1587586564656">
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587773791527" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1587755752035">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1587586564656" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1587755752035" />
     <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1587750040589">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

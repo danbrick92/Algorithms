@@ -42,10 +42,10 @@ def compute_undirected_connected_components(G):
 
 if __name__ == "__main__":
     # Generate graph
-    G = graphs.get_disconnected_nodes()
+    G = graphs.get_connected_nodes()
     # Compute connected components
     compute_undirected_connected_components(G)
-    # DFS basics
-    explored, dist_v = bfs(G, 1)
+    # BFS basics
+    explored, dist_v = bfs(G, 0)
     print("Explored nodes in this order: {}".format(explored))
     print("Shortest path to each node: {}".format(dist_v))
