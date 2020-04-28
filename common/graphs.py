@@ -69,3 +69,43 @@ def get_directed_graph():
         7: (5, 6)
     }
     return {'nodes': nodes, 'edges': edges}
+
+# Gets a directed graph
+def get_scc_graph():
+    nodes = {
+        1: [0],
+        2: [9],
+        3: [6],
+        4: [1],
+        5: [10],
+        6: [5, 7],
+        7: [2, 3],
+        8: [8],
+        9: [4]
+    }
+    edges = {
+        0: (1,7),
+        1: (4,1),
+        2: (7,4),
+        3: (7,9),
+        4: (9,6),
+        5: (6,3),
+        6: (3,9),
+        7: (6,8),
+        8: (8,2),
+        9: (2,5),
+        10: (5,8)
+    }
+    return {'nodes': nodes, 'edges': edges}
+
+def reverse_graph_in_place(G):
+    edges = list(G['edges'].keys())
+    for edge in edges:
+        e = G['edges'][edge]
+        if edge not in G['nodes'][e[0]]:
+            G['nodes'][e[0]].append(edge)
+            G['nodes'][e[1]].remove(edge)
+        else:
+            G['nodes'][e[1]].append(edge)
+            G['nodes'][e[0]].remove(edge)
+    return G
